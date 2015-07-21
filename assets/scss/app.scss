@@ -12,5 +12,66 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
+.page {
+    @include outer-container;
+}
 
+.grid {
+    @include span-columns(3.9);
+    // width: 24em;
+    height: 22em;
+    // float: left;
+    display: inline-block;
+    overflow: auto;
+    margin-top: 2em;
+}
+
+.beer {
+    color: #3F91C8;
+    font-family: Arial;
+    text-align: center;
+
+    h4 {
+
+        font-size: 1.4em;
+        font-weight: 600;
+        padding: .4em;
+    }
+    p{
+        padding: .8em .4em;
+    }
+    p:first-of-type {
+        color: #858BB0;
+        font-weight: 600;
+        font-size: 1.2em;
+    }
+}
+
+
+.list {
+    display: inline-block;
+    float: left;
+    height: 12em;
+
+    img {
+        @include span-columns(2);
+            vertical-align: middle;
+
+    }
+    h4 {
+        @include span-columns(2);
+    }
+    p {
+        @include span-columns(4);
+        overflow: scroll;
+
+    }
+    p:first-of-type {
+        @include span-columns(2);
+    }
+
+
+
+
+}
 // Your SASS Journey Starts Here
