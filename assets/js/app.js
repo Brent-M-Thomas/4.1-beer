@@ -1,17 +1,17 @@
 (function(){
-  var listButtonEl = document.getElementsByClassName(beer);
-  var gridButtonEl = document.getElementsByClassName(beer);
+  // var listButtonEl = document.getElementsByClassName(beer);
+  // var gridButtonEl = document.getElementsByClassName(beer);
 
-  listButtonEl.onclick = function list(beerClass) {
-    listButtonEl.classList.remove("grid");
-    listButtonEl.classList.add("list");
-  };
+  // listButtonEl.onclick = function list(beerClass) {
+  //   listButtonEl.classList.remove("grid");
+  //   listButtonEl.classList.add("list");
+  // };
 
-  listButtonEl.onclick = function grid(beerClass) {
-    listButtonEl.classList.remove("list");
-    listButtonEl.classList.add("grid");
+  // listButtonEl.onclick = function grid(beerClass) {
+  //   listButtonEl.classList.remove("list");
+  //   listButtonEl.classList.add("grid");
 
-  };
+  // };
 
   var templateFromQuery = function(query) {
     var el = document.querySelector(query);
