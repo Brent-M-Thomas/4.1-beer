@@ -8,13 +8,13 @@
     <title>Beer</title>
 </head>
 <body>
-    <div class="top-menu">
-        <div class="grid-button"><i class="fa fa-th"></i></div>
-        <div class="list-button"><i class="fa fa-th-list"></i></div>
-    </div>
-    <div class="target list">
+    <div class="page"></div>
+        <div class="top-menu">
+            <i class="fa fa-th"></i>
+            <i class="fa fa-th-list"></i>
+        </div>
     <template class="beer-item">
-        <div class="beer">
+        <div class="beer list">
             <img src="https://github.com/TIY-LR-FEE-2015-June/assignments/blob/master/2.1-beer-layout/bottle-1.png?raw=true" alt="">
             <h4>{{name}}</h4>
             <p> abv:{{abv}}  ibu:{{ibu}}</p>
@@ -23,11 +23,15 @@
 
         </div>
     </template>
-    </div>
 
 <script src="jquery/dist/jquery.min.js"></script>
 <script src="handlebars/handlebars.js"></script>
 <script src="beer-data.js"></script>
 <script src="app.js"></script>
+<!-- livereload snippet -->
+<script>document.write('<script src="http://'
+ + (location.host || 'localhost').split(':')[0]
+ + ':35729/livereload.js?snipver=1"><\/script>')
+</script>
 </body>
 </html>

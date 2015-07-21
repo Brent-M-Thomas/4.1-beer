@@ -13,4 +13,74 @@ html {
   box-sizing: inherit;
 }
 
-// Your SASS Journey Starts Here
+.top-menu {
+    height: 4em;
+    width: 100%;
+    border-bottom: 2px #3F91C8 solid;
+    div {
+        display:inline-block;
+        float: right;
+        padding: 1em;
+        margin-right: 1em;
+
+
+        i {
+            font-size: 2em;
+            color: #3F91C8;
+        }
+    }
+}
+
+.beer {
+    color: #3F91C8;
+    font-family: Arial;
+    text-align: center;
+
+    h4 {
+
+        font-size: 1.4em;
+        font-weight: 600;
+        padding: .4em;
+    }
+    p{
+        padding: .8em .4em;
+    }
+    p:first-of-type {
+        color: #858BB0;
+        font-weight: 600;
+        font-size: 1.2em;
+    }
+}
+.target {
+}
+.grid div{
+    @include span-columns(3.9);
+    height: 25em;
+    overflow: scroll;
+}
+.list div {
+    float: left;
+    height: 14em;
+    overflow: scroll;
+
+    img {
+        @include span-columns(3);
+        height: 100%;
+    }
+    h4{
+        @include span-columns(2);
+
+    }
+    p {
+        @include span-columns(2);
+    }
+    p:last-of-type {
+        @include span-columns(3);
+    }
+    button {
+        @include span-columns(2);
+        margin-top: 9em;
+
+    }
+}
+
