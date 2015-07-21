@@ -1853,26 +1853,18 @@ html {
 *, *:before, *:after {
   box-sizing: inherit; }
 
-.page {
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto; }
-  .page::after {
-    clear: both;
-    content: "";
-    display: table; }
-
-.grid {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 30.90859%;
-  height: 22em;
-  display: inline-block;
-  overflow: auto;
-  margin-top: 2em; }
-  .grid:last-child {
-    margin-right: 0; }
+.top-menu {
+  height: 4em;
+  width: 100%;
+  border-bottom: 2px #3F91C8 solid; }
+  .top-menu div {
+    display: inline-block;
+    float: right;
+    padding: 1em;
+    margin-right: 1em; }
+    .top-menu div i {
+      font-size: 2em;
+      color: #3F91C8; }
 
 .beer {
   color: #3F91C8;
@@ -1889,37 +1881,54 @@ html {
     font-weight: 600;
     font-size: 1.2em; }
 
-.list {
-  display: inline-block;
+.grid div {
   float: left;
-  height: 12em; }
-  .list img {
+  display: block;
+  margin-right: 2.35765%;
+  width: 30.90859%;
+  height: 25em;
+  overflow: scroll; }
+  .grid div:last-child {
+    margin-right: 0; }
+
+.list div {
+  float: left;
+  height: 14em;
+  overflow: scroll; }
+  .list div img {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%;
+    height: 100%; }
+    .list div img:last-child {
+      margin-right: 0; }
+  .list div h4 {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 14.70196%; }
+    .list div h4:last-child {
+      margin-right: 0; }
+  .list div p {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 14.70196%; }
+    .list div p:last-child {
+      margin-right: 0; }
+  .list div p:last-of-type {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%; }
+    .list div p:last-of-type:last-child {
+      margin-right: 0; }
+  .list div button {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 14.70196%;
-    vertical-align: middle; }
-    .list img:last-child {
-      margin-right: 0; }
-  .list h4 {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 14.70196%; }
-    .list h4:last-child {
-      margin-right: 0; }
-  .list p {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 31.76157%;
-    overflow: scroll; }
-    .list p:last-child {
-      margin-right: 0; }
-  .list p:first-of-type {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 14.70196%; }
-    .list p:first-of-type:last-child {
+    margin-top: 9em; }
+    .list div button:last-child {
       margin-right: 0; }

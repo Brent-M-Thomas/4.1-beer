@@ -8,13 +8,13 @@
     <title>Beer</title>
 </head>
 <body>
-    <div class="page"></div>
-        <div class="top-menu">
-            <i class="fa fa-th"></i>
-            <i class="fa fa-th-list"></i>
-        </div>
+    <div class="top-menu">
+        <div class="grid-button"><i class="fa fa-th"></i></div>
+        <div class="list-button"><i class="fa fa-th-list"></i></div>
+    </div>
+    <div class="target list">
     <template class="beer-item">
-        <div class="beer list">
+        <div class="beer">
             <img src="https://github.com/TIY-LR-FEE-2015-June/assignments/blob/master/2.1-beer-layout/bottle-1.png?raw=true" alt="">
             <h4>{{name}}</h4>
             <p> abv:{{abv}}  ibu:{{ibu}}</p>
@@ -23,6 +23,7 @@
 
         </div>
     </template>
+    </div>
 
 <script src="jquery/dist/jquery.min.js"></script>
 <script src="handlebars/handlebars.js"></script>

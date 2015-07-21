@@ -1,18 +1,18 @@
 (function(){
-  // var gridButtonEl = document.getElementsByClassName(fa-th);
-  // var beerClassEl =  document.getElementsByClassName(beer);
-  // var listButtonEl = document.getElementsByClassName(fa-th-list);
+  window.gridButtonEl = document.querySelector('.grid-button');
+  window.targetEl =  document.querySelector('.target');
+  window.listButtonEl = document.querySelector('.list-button');
 
-  // listButtonEl.onclick = function list(beerClass) {
-  //   beerClassEl.classList.remove("grid");
-  //   beerClassEl.classList.add("list");
-  // };
+  listButtonEl.onclick = function() {
+    targetEl.classList.remove("grid");
+    targetEl.classList.add("list");
+  };
 
-  // listButtonEl.onclick = function grid(beerClass) {
-  //   beerClassEl.classList.remove("list");
-  //   beerClassEl.classList.add("grid");
+  gridButtonEl.onclick = function grid() {
+    targetEl.classList.remove("list");
+    targetEl.classList.add("grid");
 
-  // };
+  };
 
   var templateFromQuery = function(query) {
     var el = document.querySelector(query);
@@ -24,6 +24,7 @@
 
   beerData.data.forEach(function(beer) {
     var addBeer = template(beer);
-    document.querySelector('body').innerHTML += addBeer;
+
+    targetEl.innerHTML += addBeer;
   });
 })();
